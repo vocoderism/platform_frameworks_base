@@ -39,6 +39,7 @@ public class QSConstants {
     public static final String TILE_NFC = "nfc";
     public static final String TILE_COMPASS = "compass";
     public static final String TILE_SCREEN_TIMEOUT = "screen_timeout";
+   //public static final String TILE_ONTHEGO = "toggleOnTheGo";
 
     // Order matters
     protected static final ArrayList<String> TILES_DEFAULT = new ArrayList<String>();
@@ -53,7 +54,6 @@ public class QSConstants {
         TILES_DEFAULT.add(TILE_LOCATION);
         TILES_DEFAULT.add(TILE_CAST);
     }
-
     protected static final ArrayList<String> TILES_AVAILABLE = new ArrayList<String>();
 
     static {

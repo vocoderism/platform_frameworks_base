@@ -2191,4 +2191,9 @@
   <java-symbol type="string" name="global_action_screenshot" />
   <java-symbol type="drawable" name="ic_lock_settings" />
   <java-symbol type="drawable" name="ic_lock_user" />
+
+  <!-- On-The-Go -->
+  <java-symbol type="string" name="global_action_onthego" />
+  <java-symbol type="drawable" name="ic_lock_onthego" />
+
 </resources>
