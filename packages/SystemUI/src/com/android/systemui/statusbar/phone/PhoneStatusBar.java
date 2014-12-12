@@ -258,7 +258,8 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
     public static final int FADE_KEYGUARD_DURATION = 300;
 
     /** Allow some time inbetween the long press for back and recents. */
-    private static final int LOCK_TO_APP_GESTURE_TOLERENCE = 200;
+
+    private static final int LOCK_TO_APP_GESTURE_TOLERENCE = 1000;
 
     PhoneStatusBarPolicy mIconPolicy;
 
