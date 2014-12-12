@@ -1509,7 +1509,7 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
             nlo.animate()
                 .alpha(showDot?1:0)
                 .setDuration(showDot?750:250)
-                .setInterpolator(new AccelerateInterpolator(2.0f))
+                .setInterpolator(new AccelerateInterpolator(1.0f))
                 .setListener(showDot ? null : new AnimatorListenerAdapter() {
                     @Override
                     public void onAnimationEnd(Animator _a) {
