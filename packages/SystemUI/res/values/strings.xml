@@ -958,4 +958,8 @@
     <string name="quick_settings_compass_init">Initializing\u2026</string>
 
     <string name="quick_settings_screen_timeout_detail_title">Screen timeout</string>
+
+    <!-- Lockscreen shortcuts -->
+    <string name="left_shortcut_hint">Swipe right for %1$s</string>
+    <string name="right_shortcut_hint">Swipe left for %1$s</string>
 </resources>
