@@ -291,7 +291,7 @@ public class VolumePanel extends Handler implements DemoMode {
         @Override
         public void onChange(boolean selfChange) {
             mVolumeLinkNotification = Settings.System.getInt(mContext.getContentResolver(),
-                    Settings.System.VOLUME_LINK_NOTIFICATION, 1) == 1;          
+                    Settings.Secure.VOLUME_LINK_NOTIFICATION, 1) == 1;          
             mVolPanelTimeoutDelay = Settings.System.getInt(mContext.getContentResolver(),
                     Settings.System.VOLUME_PANEL_TIMEOUT, TIMEOUT_DELAY_VOL_PANEL);
         }
