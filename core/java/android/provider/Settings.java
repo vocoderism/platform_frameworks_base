@@ -5737,6 +5737,12 @@ public final class Settings {
         public static final String SLEEP_TIMEOUT = "sleep_timeout";
 
         /**
+         * Whether to include options in power menu for rebooting into recovery and bootloader
+         * @hide
+         */
+          public static final String ADVANCED_REBOOT = "advanced_reboot";
+
+        /**
          * Controls whether double tap to wake is enabled.
          * @hide
          */
@@ -5807,6 +5813,7 @@ public final class Settings {
             MOUNT_UMS_NOTIFY_ENABLED,
             SLEEP_TIMEOUT,
             DOUBLE_TAP_TO_WAKE,
+            ADVANCED_REBOOT,
         };
 
         /**
