@@ -748,6 +748,7 @@ public class PhoneWindowManager implements WindowManagerPolicy {
 		    UserHandle.USER_ALL);
             resolver.registerContentObserver(Settings.System.getUriFor(
                     Settings.System.NAVIGATION_BAR_HEIGHT), false, this,
+                    UserHandle.USER_ALL);
             resolver.registerContentObserver(Settings.System.getUriFor(
                     Settings.System.THREE_FINGER_GESTURE), false, this,
                     UserHandle.USER_ALL);
@@ -1751,7 +1752,6 @@ public class PhoneWindowManager implements WindowManagerPolicy {
                 updateWakeGestureListenerLp();
             }
 
-<<<<<<< HEAD
             // navigation bar custom height
             int  mNavigationBarHeight = Settings.System.getInt(resolver,
                     Settings.System.NAVIGATION_BAR_HEIGHT, 48);
@@ -1766,12 +1766,11 @@ public class PhoneWindowManager implements WindowManagerPolicy {
             mNavigationBarWidthForRotation[mLandscapeRotation] =
             mNavigationBarWidthForRotation[mSeascapeRotation] =
                 (mNavigationBarHeight - 6) * DisplayMetrics.DENSITY_DEVICE/DisplayMetrics.DENSITY_DEFAULT;
-=======
+
             //Three Finger Gesture
             boolean threeFingerGesture = Settings.System.getIntForUser(resolver,
                     Settings.System.THREE_FINGER_GESTURE, 1, UserHandle.USER_CURRENT) == 1;
             enableSwipeThreeFingerGesture(threeFingerGesture);            
->>>>>>> 6e54baf... [1/2]frameworks/base: Add three-fingers-swipe to screenshot
 
             // Configure rotation lock.
             int userRotation = Settings.System.getIntForUser(resolver,
