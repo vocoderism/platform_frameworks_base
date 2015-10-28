@@ -16,4 +16,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Battery level for expanded quick settings [CHAR LIMIT=2] -->
     <string name="battery_level_template"><xliff:g id="level" example="45">%d</xliff:g>%%</string>
+    
+    <!-- Screenshot Delete Toast -->
+    <string name="delete_screenshot_toast">Screenshot Deleted</string>
+
 </resources>
