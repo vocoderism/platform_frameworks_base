@@ -379,13 +379,11 @@ public class NotificationPanelView extends PanelView implements
 
     @Override
     public void onAttachedToWindow() {
-        mSecureCameraLaunchManager.create();
         mSettingsObserver.observe();
     }
 
     @Override
     public void onDetachedFromWindow() {
-        mSecureCameraLaunchManager.destroy();
         mSettingsObserver.unobserve();
     }
     private void startQsSizeChangeAnimation(int oldHeight, final int newHeight) {
@@ -2467,6 +2465,7 @@ public class NotificationPanelView extends PanelView implements
                     resolver, Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN,
                     ONE_FINGER_QS_INTERCEPT_END, UserHandle.USER_CURRENT);
         }
+}
     @Override
     public boolean hasOverlappingRendering() {
         return !mDozing;

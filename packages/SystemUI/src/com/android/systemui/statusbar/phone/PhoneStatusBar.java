@@ -1787,25 +1787,6 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
                 if (DEBUG_MEDIA) {
                     Log.v(TAG, "DEBUG_MEDIA: Fading out album artwork");
                 }
-                mBackdrop.animate()
-                        // Never let the alpha become zero - otherwise the RenderNode
-                        // won't draw anything and uninitialized memory will show through
-                        // if mScrimSrcModeEnabled. Note that 0.001 is rounded down to 0 in libhwui.
-                        .alpha(0.002f)
-                        .setInterpolator(mBackdropInterpolator)
-                        .setDuration(200)
-                        .setStartDelay(0)
-                        .withEndAction(new Runnable() {
-                            @Override
-                            public void run() {
-                                mBackdrop.setVisibility(View.GONE);
-                                mBackdropFront.animate().cancel();
-                                mBackdropBack.animate().cancel();
-                                mHandler.post(mHideBackdropFront);
-                            }
-                        });
-                if (mKeyguardFadingAway) {
-                    mBackdrop.animate()
 
                 if (mFingerprintUnlockController.getMode()
                         == FingerprintUnlockController.MODE_WAKE_AND_UNLOCK_PULSING) {
